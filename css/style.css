@@ -1,0 +1,216 @@
+:root {
+    --backgroundColor: #fff6f4;
+    --primaryNavbarColor: #525fe1;
+    --cardFirst: #1C2688;
+    --cardSec: #F86F03;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap');
+
+body {
+    background-color: var(--backgroundColor);
+    font-family: 'Poppins', sans-serif;
+    height: 150vh;
+}
+
+/* Navbar */
+
+nav {
+    position: fixed;
+    top: 15px;
+    left: 25px;
+    right: 25px;
+    background-color: var(--primaryNavbarColor);
+    padding: .8em 0;
+    border-radius: 20px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, .25);
+}
+
+nav .navbar-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav .navbar-content .hamburger {
+    height: 2rem;
+    width: 2rem;
+    color: white;
+}
+
+nav .navbar-content h1 {
+    font-weight: 600;
+    font-size: 2rem;
+    color: white;
+}
+
+
+.searchdiv {
+    display: none;
+    color: white;
+}
+
+nav .navbar-content input[type="text"]{
+    flex-grow: .3;
+    background-color: var(--primaryNavbarColor);
+    border: 1px solid white;
+    color: white;
+    outline: none;
+    padding: .8em 1.5em;
+    border-radius: 30px;
+}
+
+nav .navbar-content input[type="text"]::placeholder,
+nav .navbar-content input[type="text"] 
+{
+    color: white;
+    font-weight:400;
+    font-size: 1rem;
+    letter-spacing: 1.5px;
+}
+
+/* Hero */
+.hero {
+    margin: 20px 45px;
+    margin-top: 120px;
+    display: grid;
+    grid-template-columns: 2fr .7fr;
+}
+
+.hero .hero-content {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.hero .hero-content .hero-title h1 {
+    font-weight: 800;
+    font-size: 3rem;
+}
+.hero .hero-content .hero-title h2 {
+    margin-top: 10px;
+    font-weight: 100;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    color: rgba(0, 0, 0, .5);
+}
+
+.hero .hero-content .hero-title h2 span {
+    font-style: italic;
+}
+
+.hero .hero-content .hero-card {
+    margin-top: 25px;
+    background: linear-gradient(143deg, rgba(82, 95, 225, 0.60) 30.73%, rgba(255, 255, 255, 0.20) 100%);
+    padding: 2.5em 1.5em;
+    border-radius: 15px;
+    box-shadow: 0px 10px 20px -5px rgba(0, 92, 186, 0.50);
+    width: 90%;
+}
+
+.hero .hero-content .hero-card h1 {
+    font-weight: 700;
+    font-size: 2.1rem;
+    letter-spacing: 4px;
+}
+
+.hero .hero-content .hero-card p {
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-top: 15px;
+}
+
+.hero .hero-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 5px;
+    gap: 30px;
+}
+
+.hero .hero-item .hero-image {
+    background-image: url(../assets/img/hero-img.jpg);
+    background-repeat: none;
+    background-position: center;
+    background-size: cover;
+    width: 70%;
+    height: 45vh;
+    border-radius: 1vw;
+}
+
+.hero .hero-item .cards {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+}
+
+.hero .hero-item .card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    color: white;
+    padding: 2em 1em;
+    width: 70%;
+    border-radius: 12px; 
+}
+
+.hero .hero-item .card:nth-child(2n+1) {
+    background-color: var(--cardFirst);
+}
+.hero .hero-item .card:nth-child(2n) {
+    background-color: var(--cardSec);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:800px) {
+    /* Navbar */
+    body {
+        font-size: 75%;
+    }
+
+    nav .searchdiv {
+        display: block;
+    }
+
+    nav input[type="text"]{
+        display: none;
+    }
+
+    /* Hero */
+    .hero {
+        margin-top: 90px;
+    }
+
+    .hero-title{
+        width: 70%;
+    }
+}
+
+@media (max-width:500px) {
+    body {
+        font-size: 55%;
+    }
+    
+    /* Hero */
+    .hero .hero-content .hero-title h1 {
+        font-size: 2rem;
+    }
+
+    .hero .hero-content .hero-title h2 {
+        font-size: .9rem;
+    }
+
+}
