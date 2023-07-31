@@ -1,0 +1,153 @@
+:root {
+    --backgroundColor: #fff6f4;
+    --primaryNavbarColor: #525fe1;
+    --cardFirst: #1C2688;
+    --cardSec: #F86F03;
+    --profilePadding: #ffa41b;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap');
+
+body {
+    background-color: var(--backgroundColor);
+    font-family: 'Poppins', sans-serif;
+    height: 150vh;
+}
+
+nav {
+    position: fixed;
+    top: 15px;
+    left: 25px;
+    right: 25px;
+    background-color: var(--primaryNavbarColor);
+    padding: .8em 0;
+    border-radius: 20px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, .25);
+}
+
+nav .navbar-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav .navbar-content .hamburger {
+    height: 2rem;
+    width: 2rem;
+    color: white;
+}
+
+nav .navbar-content h1 {
+    font-weight: 600;
+    font-size: 2rem;
+    color: white;
+}
+
+
+.searchdiv {
+    display: none;
+    color: white;
+}
+
+nav .navbar-content input[type="text"]{
+    flex-grow: .3;
+    background-color: var(--primaryNavbarColor);
+    border: 1px solid white;
+    color: white;
+    outline: none;
+    padding: .8em 1.5em;
+    border-radius: 30px;
+}
+
+nav .navbar-content input[type="text"]::placeholder,
+nav .navbar-content input[type="text"] 
+{
+    color: white;
+    font-weight:400;
+    font-size: 1rem;
+    letter-spacing: 1.5px;
+}
+
+
+
+nav .navbar-content .menu ul {
+    display: inline-block;
+    position:absolute;
+    background-color: white;
+    margin-left: 10px;
+    border-radius: 20px;
+    transition: 150ms ease;
+    transform: scale(0);
+}
+
+nav .navbar-content .menu ul li a{
+    display: block;
+    padding: 20px 25px;
+    color: black;
+    text-decoration: none;
+    text-align: center;
+    z-index: 999;
+}
+
+nav .navbar-content .menu ul li a:hover {
+    color: var(--cardSec);
+}
+
+nav .navbar-content .menu:hover ul {
+    transform: scale(1);
+}
+
+/* Content */
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 45px;
+    margin-top: clamp(100px,9vw,120px); 
+    gap: calc(12px + 2vw);
+    font-family: 'Montserrat', sans-serif;
+}
+
+.content h1 {
+    font-weight: 800;
+    font-size: clamp(45px,3vw,70px);
+    letter-spacing: 1.8px;
+    color: var(--primaryNavbarColor);
+}
+
+.content .container {
+    display: flex;
+    width: 100%;
+    /* grid-template-columns: 2fr 3fr 1fr; */
+}
+
+.content .container .user {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.content .container .user .userIcon {
+    width: 7vw;
+    height: 7vw;
+    padding: 2em;
+    background-color: var(--profilePadding);
+    border-radius: 50%;
+}
+
+.content .container .biodata {
+    flex-grow: 1;
+}
+
+.content .container .activities {
+    width: 20%;
+}
+
+.content .container .activities .container {
+    display: flex;
+    flex-direction: column;
+    /* flex-wrap: wrap; */
+}
+
