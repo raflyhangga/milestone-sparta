@@ -70,6 +70,36 @@ nav .navbar-content input[type="text"]
     letter-spacing: 1.5px;
 }
 
+
+
+nav .navbar-content .menu ul {
+    display: inline-block;
+    position:absolute;
+    background-color: white;
+    margin-left: 10px;
+    border-radius: 20px;
+    transition: 150ms ease;
+    transform: scale(0);
+
+}
+
+nav .navbar-content .menu ul li a{
+    display: block;
+    padding: 20px 25px;
+    color: black;
+    text-decoration: none;
+    text-align: center;
+    z-index: 999;
+}
+
+nav .navbar-content .menu ul li a:hover {
+    color: var(--cardSec);
+}
+
+nav .navbar-content .menu:hover ul {
+    transform: scale(1);
+}
+
 /* Hero */
 .hero {
     margin: 0 45px;
@@ -96,11 +126,11 @@ nav .navbar-content input[type="text"]
 
 .hero .hero-content .hero-title h1 {
     font-weight: 800;
-    font-size: clamp(2rem,3.6vw,4rem);
+    font-size: clamp(3rem,3.6vw,4rem);
 }
 .hero .hero-content .hero-title h2 {
     margin-top: 10px;
-    font-weight: 100;
+    font-weight: 600;
     font-size: clamp(.8rem,1.5vw,1.8rem);
     letter-spacing: 2px;
     color: rgba(0, 0, 0, .5);
@@ -110,8 +140,9 @@ nav .navbar-content input[type="text"]
     font-style: italic;
 }
 
-.hero .hero-content .hero-card {
-    margin-top: 25px;
+.hero .hero-content .hero-card,
+.hero-card {
+    margin-top: calc(65px + 0.9vw);
     background: linear-gradient(143deg, rgba(82, 95, 225, 0.60) 30.73%, rgba(255, 255, 255, 0.20) 100%);
     padding: 2.5em 2em;
     border-radius: 15px;
@@ -119,13 +150,15 @@ nav .navbar-content input[type="text"]
     /* width: min(90%,100ch); */
 }
 
-.hero .hero-content .hero-card h1 {
+.hero .hero-content .hero-card h1,
+.hero-card h1 {
     font-weight: 700;
     font-size: clamp(1.3rem,2.3vw,3rem);
     letter-spacing: 4px;
 }
 
-.hero .hero-content .hero-card p {
+.hero .hero-content .hero-card p,
+.hero-card p {
     font-weight: 500;
     font-size: clamp(.9rem,1vw,3rem);
     line-height: 1.5;
@@ -207,6 +240,19 @@ nav .navbar-content input[type="text"]
 .galleries .card-galleries h1 {
     font-size: clamp(1rem,1.2vw, 4rem);
     color: white;
+}
+
+.sections {
+    margin: calc(40px + 3vw) 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.sections .hero-card {
+    flex: 1;
+    flex-basis: 100%;
+    margin-top: 0;
 }
 
 
