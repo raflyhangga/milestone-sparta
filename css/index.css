@@ -1,5 +1,5 @@
 :root {
-    --backgroundColor: #fff6f4;
+    --backgroundColor: #d9d9d9;
     --primaryNavbarColor: #525fe1;
     --cardFirst: #1C2688;
     --cardSec: #F86F03;
@@ -61,6 +61,10 @@ nav .navbar-content input[type="text"]{
     border-radius: 30px;
 }
 
+nav .navbar-content input[type="text"]:hover{
+    cursor: pointer;
+}
+
 nav .navbar-content input[type="text"]::placeholder,
 nav .navbar-content input[type="text"] 
 {
@@ -76,6 +80,7 @@ nav .navbar-content .menu ul {
     display: inline-block;
     position:absolute;
     background-color: white;
+    box-shadow: 0px 10px 20px -5px rgba(0, 92, 186, 0.5);
     margin-left: 10px;
     border-radius: 20px;
     transition: 150ms ease;
