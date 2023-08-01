@@ -4,6 +4,12 @@
     --cardFirst: #1C2688;
     --cardSec: #F86F03;
     --profilePadding: #ffa41b;
+    --fontColor: #015cba;
+    --fontSecondaryColor: #4f9bfd;
+    --activitiesCard1: #FFFC83;
+    --activitiesCard2: #fff;
+    --activitiesCard3: #C883FF;
+    --buttonColor: #D9D9D9;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap');
@@ -102,6 +108,7 @@ nav .navbar-content .menu:hover ul {
 
 .content {
     display: flex;
+    /* flex-wrap: wrap; */
     flex-direction: column;
     align-items: center;
     margin: 0 45px;
@@ -119,12 +126,16 @@ nav .navbar-content .menu:hover ul {
 
 .content .container {
     display: flex;
+    flex-wrap: wrap;
     width: 100%;
-    /* grid-template-columns: 2fr 3fr 1fr; */
+    gap: 30px;
+    justify-content: space-around;
+    /* grid-template-columns: repeat(auto-fit,minmax(500px,1fr)) ; */
 }
 
 .content .container .user {
     flex-grow: 1;
+    flex-basis: 0;
     display: flex;
     justify-content: center;
 }
@@ -139,15 +150,113 @@ nav .navbar-content .menu:hover ul {
 
 .content .container .biodata {
     flex-grow: 1;
+    flex-basis: 0;
+    border: calc(2px + 0.01vw) solid var(--cardFirst);
+    padding: 3em 4em;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    height: fit-content;
 }
 
-.content .container .activities {
-    width: 20%;
+.content .container .biodata .section {
+    line-height: 1.2;
+}
+
+
+.content .container .biodata h2 {
+    font-weight: 700;
+    font-size: calc(1rem + .8vw);
+    color: var(--fontColor);
+}
+
+.content .container .biodata p {
+    font-size: calc(.8rem + .2vw);
+    color: var(--fontSecondaryColor);
+}
+
+
+.content .activities {
+    flex-grow: 1;
+    flex-basis: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    background-color: var(--primaryNavbarColor);
+    padding: 1em 1.4em;
+    border-radius: 10px;
+    min-width: 200px;
+}
+
+.content .activities .activities-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content .activities .activities-title h2,
+.content .activities .activities-title .plusIcon {
+    color: white;
+}
+
+.content .activities .activities-title h2 {
+    font-weight: 700;
+    font-size: 1.6rem;
 }
 
 .content .container .activities .container {
     display: flex;
     flex-direction: column;
-    /* flex-wrap: wrap; */
 }
 
+.content .container .activities .container .card {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    padding: 1em 1.5em;
+    border-radius: 10px;
+
+}
+
+.content .container .activities .container .card:nth-child(1) {
+    background-color: var(--activitiesCard1);
+}
+.content .container .activities .container .card:nth-child(2) {
+    background-color: var(--activitiesCard2);
+}
+.content .container .activities .container .card:nth-child(3) {
+    background-color: var(--activitiesCard3);
+}
+
+.content .container .activities .container .card h3 {
+    font-weight: 600;
+    font-size: 1rem;
+    /* margin-bottom: 4px; */
+}
+
+.content .container .activities .container .card p {
+    font-size: .9rem;
+    line-height: 1.2;
+    letter-spacing: .6px;
+}
+
+.content .container .activities .container .card .next {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.content .container .activities button {
+    font-family: 'Poppins',sans-serif;
+    border: none;
+    background-color: var(--buttonColor);
+    font-weight: 800;
+    font-size: 1.2rem;
+    padding: .3em 1em;
+    border-radius: 20px;
+}
+
+.content .container .activities button:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
