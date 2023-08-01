@@ -109,6 +109,17 @@ nav .navbar-content .menu:hover ul {
     transform: scale(1);
 }
 
+@media (max-width:800px) {
+    nav .searchdiv {
+        display: block;
+    }
+
+    nav input[type="text"]{
+        display: none;
+    }
+}
+
+
 /* Content */
 
 .content {
@@ -177,7 +188,7 @@ nav .navbar-content .menu:hover ul {
 }
 
 .content .container .biodata p {
-    font-size: calc(.8rem + .2vw);
+    font-size: calc(.9rem + .2vw);
     color: var(--fontSecondaryColor);
 }
 
