@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - MaPed</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/dash.css">
+    <script src="https://unpkg.com/feather-icons"></script>
+</head>
+<body>
+    <nav>
+        <div class="navbar-content">
+            <div class="menu">
+                <i data-feather="menu" class="hamburger"></i>
+                <ul class="dropdown">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="dashboard.html">Profile</a></li>
+                    <li><a href="#">Log Out</a></li>
+                </ul>
+            </div>
+            <h1>MaPed</h1>
+            <div class="searchdiv">
+                <i data-feather="search" class="searchIcon"></i>
+            </div>
+            <input type="text" placeholder="Search">
+        </div>
+    </nav>
+
+    <div class="content">
+        <div class="container">
+            <div class="profile" onclick="location.href='profile.html';">
+                <img src="assets/img/main_profile.jpg" alt="tes" class="profilepic">
+                <div class="text">
+                    <h2>Matthew Murphy</h2>
+                    <p>19625181</p>
+                </div>
+                <div class="major">
+                    <h3>Teknik Informatika</h3>
+                    <p>Informatics Engineering</p>
+                </div>
+                <div class="bell">
+                    <i data-feather="bell" class="iconBell"></i>
+                </div>
+            </div>
+            <div class="stat">
+                <div class="matkul">
+                    <h1>Mata Kuliah</h1>
+                    <ul>
+                        <li>Matkul 1</li>
+                        <li>Matkul 2</li>
+                        <li>Matkul 3</li>
+                        <li>Matkul 4</li>
+                    </ul>
+                </div>
+                <div class="sks">
+                    <div class="content">
+                        <h1>36 / 144</h1>
+                        <p>Lulus SKS</p>
+                    </div>
+                </div>
+            </div>
+            <div class="planner">
+                <div class="content-plan">
+                    <h1>Plan your classes!</h1>
+                    <p>Gunakan planner kami untuk menentukan kelas yang akan kamu pilih!</p>
+                </div>
+                <i data-feather="arrow-right" class="iconArrow"></i>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script>
+        feather.replace()
+    </script>
+</body>
+</html>

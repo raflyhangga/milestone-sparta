@@ -1,0 +1,316 @@
+:root {
+    --backgroundColor: #d9d9d9;
+    --primaryNavbarColor: #525fe1;
+    --cardFirst: #1C2688;
+    --cardSec: #F86F03;
+    --plannerHeader: #d00000;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap');
+
+
+body {
+    background-color: var(--backgroundColor);
+    font-family: 'Poppins', sans-serif;
+    height: 150vh;
+}
+
+nav {
+    position: fixed;
+    top: 15px;
+    left: 25px;
+    right: 25px;
+    z-index: 9999;
+    background-color: var(--primaryNavbarColor);
+    padding: .8em 0;
+    border-radius: 20px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, .25);
+}
+
+nav .navbar-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav .navbar-content .hamburger {
+    height: 2rem;
+    width: 2rem;
+    color: white;
+}
+
+nav .navbar-content h1 {
+    font-weight: 600;
+    font-size: 2rem;
+    color: white;
+}
+
+
+.searchdiv {
+    display: none;
+    color: white;
+}
+
+nav .navbar-content input[type="text"]{
+    flex-grow: .3;
+    background-color: var(--primaryNavbarColor);
+    border: 1px solid white;
+    color: white;
+    outline: none;
+    padding: .8em 1.5em;
+    border-radius: 30px;
+}
+
+nav .navbar-content input[type="text"]:hover{
+    cursor: pointer;
+}
+
+nav .navbar-content input[type="text"]::placeholder,
+nav .navbar-content input[type="text"] 
+{
+    color: white;
+    font-weight:400;
+    font-size: 1rem;
+    letter-spacing: 1.5px;
+}
+
+
+
+nav .navbar-content .menu ul {
+    display: inline-block;
+    position:absolute;
+    background-color: white;
+    margin-left: 10px;
+    border-radius: 20px;
+    box-shadow: 0px 10px 20px -5px rgba(0, 92, 186, 0.50);
+    transition: 150ms ease;
+    transform: scale(0);
+}
+
+nav .navbar-content .menu ul li a{
+    display: block;
+    padding: 20px 25px;
+    color: black;
+    text-decoration: none;
+    text-align: center;
+    z-index: 999;
+}
+
+nav .navbar-content .menu ul li a:hover {
+    color: var(--cardSec);
+}
+
+nav .navbar-content .menu:hover ul {
+    transform: scale(1);
+}
+
+@media (max-width:800px) {
+    nav .searchdiv {
+        display: block;
+    }
+
+    nav input[type="text"]{
+        display: none;
+    }
+}
+
+/* Profile Bar */
+
+.content {
+    margin: 0 55px;
+    margin-top: clamp(100px,9vw,120px); 
+}
+
+.content .container, 
+.content .container .profile {
+    display: flex;
+}
+
+.content .container {
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    
+}
+
+.content .container .profile {
+    gap: 20px;
+    flex-wrap: wrap;
+    min-width: 300px ;
+    font-family: 'Montserrat',sans-serif;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: white;
+    box-shadow: 0px 4px 5px 1px rgba(0, 0, 0, 0.25);
+    padding: 2em 0;
+    border-radius: 20px;
+    transition: 125ms linear;
+}
+
+.content .container .profile:hover {
+    transform: scale(1.04);
+    cursor: pointer;
+}
+
+.content .container .profile img.profilepic {
+    width: clamp(100px,10%,140px);
+    height: clamp(100px,10%,140px);
+    border-radius: 50%;
+    margin: 0 15px;
+}
+
+.content .container .profile .text {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.2;
+    margin: 10px 3px;
+}
+
+.content .container .profile .text h2 {
+    font-weight: 600;
+    font-size: 2.5em;
+}
+
+.content .container .profile .text p {
+    font-size: 1em;
+    font-style: italic;
+    font-weight: 300;
+}
+
+.content .container .profile .major {
+    margin: 0px 20px;
+    margin-bottom: 10px;
+    line-height: 1.2;
+    /* margin-left: 20px; */
+    color: grey;
+}
+
+.content .container .profile .major h3 {
+    font-weight: 600;
+    font-size: 1.3em;
+    /* 1rem 1.3rem */
+}
+
+.content .container .profile .major p {
+    font-size: 1em;
+    font-style: italic;
+}
+
+.content .container .bell .iconBell {
+    width: 2em;
+    height: 2em;
+    margin: 10px 4px;
+}
+
+
+.content .container .stat {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    width: 100%;
+    gap: 25px;
+}
+
+.content .container .stat .matkul {
+    background: linear-gradient(44deg, #FFA41B 0%, rgba(255, 164, 27, 0.78) 100%);
+    box-shadow: 0px 5px 9px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+    padding: 2em 3em;
+    font-family: 'Montserrat',sans-serif;
+}
+
+.content .container .stat .matkul h1 {
+    color: #FFF;
+    font-size: 2em;
+    font-style: normal;
+    font-weight: 800;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+.content .container .stat .matkul ul li {
+    margin: 3px 0;
+    margin-left: 1em;
+    list-style-type: disc;
+    line-height: 1.2;
+    color: #FFF;
+    font-size: 1.2em;
+    font-style: normal;
+    font-weight: 600;
+    letter-spacing: 1.3px;
+}
+
+.content .container .stat .sks {
+    display: flex;;
+    align-items: center;
+    background: linear-gradient(48deg, #EF233C 0%, rgba(239, 35, 60, 0.76) 100%);
+    box-shadow: 0px 3px 7px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+    line-height: 1.3;
+    padding-bottom: 25px;
+}
+
+.content .container .stat .sks h1 {
+    font-weight: 800;
+    color: white;
+    font-size: 4em;
+}
+
+.content .container .stat .sks p {
+    color: white;
+    font-size: 1.5em;
+}
+
+.content .planner {
+    background: linear-gradient(90deg, var(--cardSec) 0%, rgba(217, 217, 217, 0.5) 100%);
+    box-shadow: 0px 4px 5px 2px rgba(0, 0, 0, 0.25);
+    padding: 2em 3em ;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    flex-grow: 1;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 15px;
+}
+
+.content .planner .content-plan {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.3;
+}
+
+.content .planner .content-plan h1 {
+    font-weight: 800;
+    font-size: 3em;
+    color: var(--plannerHeader);
+}
+
+.content .planner .content-plan p {
+    font-size: 1.3em;
+}
+
+.content .planner .iconArrow {
+    width: 34px ;
+    height: 34px;
+    color: var(--primaryNavbarColor);
+}
+
+@media (max-width:938px) {
+    .content .container {
+        align-items: start;
+
+    }
+}
+
+@media (max-width:730px) {
+    .content  {
+        font-size: 80%;
+    }
+}
+@media (max-width:480px) {
+    .content  {
+        font-size: 70%;
+    }
+}
