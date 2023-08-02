@@ -1,0 +1,94 @@
+:root {
+    --backgroundColor: #d9d9d9;
+    --backgroundLogout : #525fe1;
+    --primaryNavbarColor: #525fe1;
+    --cardFirst: #1C2688;
+    --cardSec: #F86F03;
+    --profilePadding: #ffa41b;
+    --fontColor: #015cba;
+    --fontSecondaryColor: #4f9bfd;
+    --activitiesCard1: #FFFC83;
+    --activitiesCard2: #fff;
+    --activitiesCard3: #C883FF;
+    --buttonColor: #D9D9D9;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap');
+
+
+:root {
+    --backgroundColor: #d9d9d9;
+    --primaryNavbarColor: #525fe1;
+    --cardFirst: #1C2688;
+    --cardSec: #F86F03;
+}
+
+body {
+    background-color: var(--cardFirst);
+    font-family: 'Poppins', sans-serif;
+    height: 150vh;
+}
+
+
+/* Hero */
+.popup {
+    margin: 0 45px;
+    margin-top: clamp(100px,9vw,120px); 
+    /* margin-top: 8vw; */
+    display: flex;
+    /* grid-template-columns: 2fr .7fr; */
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* align-items: center; */
+    gap: 50px;
+    padding : auto;
+    text-align: center;
+    margin-top: 50px;
+    font-family: Poppins;
+    font-size: larger;
+
+}
+
+.popup.hero-card,
+.hero-card {
+    margin-top: calc(65px + 0.9vw);
+    background: linear-gradient(143deg, rgba(123, 97, 255, 0.60) 0%, rgba(255, 255, 255, 0.20) 100%);
+    padding: 2.5em 2em;
+    border-radius: 15px;
+    box-shadow: 0px 10px 20px -5px rgba(0, 92, 186, 0.50);
+}
+
+.popup .hero-card h1,
+.hero-card h1 {
+    font-weight: 700;
+    font-size: clamp(1.3rem,2.3vw,3rem);
+    letter-spacing: 4px;
+    margin-bottom: 30px;  
+}
+
+.btn { 
+    outline:rgba(255, 255, 255, 0.5) solid 2px;
+    padding: 8px 8px;
+    border-radius: 10px;
+    /* color: var(--cardFirst); */
+    background: linear-gradient(143deg, rgba(255, 255, 255, 0.60) 0%, rgba(255, 255, 255, 0.20) 100%);
+    padding: 10px 20px;
+    border: none;
+    color : none;
+    text-align: center;
+    display: inline-block;
+    font-size:16px;
+    margin: 4px 2px;
+    cursor: pointer;
+
+}
+.btn :hover {
+    background-color: #4f9bfd;
+}
+
+
+
+
+
+
