@@ -1,0 +1,176 @@
+:root {
+    --backgroundColor: #d9d9d9;
+    --backgroundLogout : #525fe1;
+    --primaryNavbarColor: #525fe1;
+    --cardFirst: #1C2688;
+    --cardSec: #F86F03;
+    --profilePadding: #ffa41b;
+    --fontColor: #015cba;
+    --fontSecondaryColor: #4f9bfd;
+    --activitiesCard1: #FFFC83;
+    --activitiesCard2: #fff;
+    --activitiesCard3: #C883FF;
+    --buttonColor: #D9D9D9;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap');
+
+
+:root {
+    --backgroundColor: #d9d9d9;
+    --primaryNavbarColor: #525fe1;
+    --cardFirst: #1C2688;
+    --cardSec: #F86F03;
+}
+
+body {
+    background-color: var(--cardFirst);
+    font-family: 'Poppins', sans-serif;
+    height: 150vh;
+    text-align: center;
+}
+
+
+/* Hero */
+.popup {
+    width: auto;
+    height: auto;
+    margin: 0 45px;
+    margin-top: clamp(100px,9vw,120px); 
+    /* margin-top: 8vw; */
+    /* display: flex;
+    /* grid-template-columns: 2fr .7fr; */
+    flex-direction: row;
+    flex-wrap: wrap; 
+    justify-content: center;
+    /* align-items: center; */
+    gap: 50px;
+    padding : auto;
+    text-align: center;
+    margin-top: 100px 200px;
+    font-family: Poppins;
+    font-size: medium;
+
+}
+
+.popup.hero-card,
+.hero-card {
+    margin-top: calc(65px + 0.9vw);
+    background: linear-gradient(143deg, rgba(254, 254, 254, 0.6) 0%, rgba(255, 255, 255, 0.20) 100%);
+    padding: 2.5em 2em;
+    border-radius: 15px;
+    box-shadow: 0px 10px 20px -5px rgba(0, 92, 186, 0.50);
+    font-weight: bold;
+}
+
+.popup .hero-card h1,
+.hero-card h1 {
+    font-weight: 700;
+    font-size: clamp(1.3rem,2.3vw,3rem);
+    letter-spacing: 4px;
+    margin-bottom: 30px;  
+}
+
+.btn-login { 
+    outline:#525fe1 solid 2px ;
+    width: 100px;
+    height: 50px;
+    padding: 5px 3px;
+    border-radius: 12px;
+    /* color: var(--cardFirst); */
+    background: none;
+    padding: 10px 20px;
+    border:none;
+    color : none;
+    text-align: center;
+    display: inline-block;
+    font-size:16px;
+    margin: 4px 2px;
+    cursor: pointer;
+
+}
+.btn-logout { 
+    width: 100px;
+    height: 50px;
+    padding: 5px 3px;
+    border-radius: 12px;
+    /* color: var(--cardFirst); */
+    background: none;
+    padding: 10px 20px;
+    border:none;
+    color : none;
+    text-align: center;
+    display: inline-block;
+    font-size:16px;
+    margin: 4px 2px;
+    cursor: pointer;
+
+}
+.input {
+    width: 100%;
+}
+
+
+.btn :hover {
+    background-color: #4f9bfd;
+}
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    border-radius: 10px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+.input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.input[type=submit] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: auto;
+}
+
+.form-signin {
+    padding-left: 40px;
+    padding-right: 40px;
+    width: auto;
+}
+
+.div {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  width: auto;
+}
+
+.checklis_login {
+    padding-top: 40px;
+    width: auto;
+}
+.form-signin .div{
+    width: 100%;
+}
+
+
+
+
+
+
+
