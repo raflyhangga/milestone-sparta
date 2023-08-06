@@ -18,7 +18,7 @@
                     No
                 </button>
             </a>
-            <a href="login.html">
+            <a href="#" class="yes">
                 <button class="btn">
                     Yes
                 </button>
@@ -27,6 +27,11 @@
     </div>
     <script>
         feather.replace();
+        let button = document.querySelector(".popup .hero-card a.yes");
+
+        button.addEventListener('click', (e)=> {
+            alert("Sorry, we don't know how to do this yet :(")
+        })
     </script>
 </body>
 </html>

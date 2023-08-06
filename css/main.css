@@ -1,0 +1,108 @@
+:root {
+    --backgroundColor: #d9d9d9;
+    --primaryNavbarColor: #525fe1;
+    --cardFirst: #1C2688;
+    --cardSec: #F86F03;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap');
+
+body {
+    background-color: var(--backgroundColor);
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+
+.navbar {
+    width: 100%;
+    background-color: var(--primaryNavbarColor);
+    padding: 1em 0;
+}
+
+
+.navbar h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins',sans-serif;
+    font-weight: 600;
+    font-size: 2em;
+    color: white;
+}
+
+.container-huge {
+    margin: 0 40px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+}
+
+.container-huge h1 {
+    font-weight: 700;
+    font-size: 2em;
+}
+
+.container-huge .container {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+
+.container-huge .matkul {
+    padding: 1.2em 1.8em;
+    background-color: white;
+    border-radius: 15px;
+    transition: 75ms ease-in-out;
+    box-shadow: 0px 10px 20px -5px rgba(0, 92, 186, 0.50);
+}
+
+.container-huge .matkul:hover {
+    transform: scale(1.025);
+}
+
+.matkul h2 {
+    font-weight: 700;
+    font-size: 1.5em;
+    margin-bottom: 15px;
+}
+
+.matkul .bar {
+    margin: 5px 0;
+    line-height: 1.2;
+}
+
+.matkul .bar h3 {
+    font-weight: 600;
+    font-size: 1.2em ;
+}
+
+.matkul .bar ul li {
+    list-style-type:decimal;
+    margin-left: 1.5em;
+    color: grey;
+    font-weight: 600;
+}
+
+.matkul .bar ul li a {
+    text-decoration: none;
+    color: var(--cardFirst);
+}
+
+.matkul .bar ul li a:hover {
+    color: var(--cardSec);
+}
+
+@media (max-width:750px) {
+    body {
+        font-size: 90%;
+    }
+}
