@@ -12,7 +12,6 @@ Projek ini dapat dijalani dengan membuka file ``index.html`` pada browser defaul
 
 Projek ini dapat juga dijalani dengan mengakses link <a href="https://raflyhangga.github.io/milestone-sparta/">berikut</a>.
 
-
 ## Sources
 1. Photo by <a href="https://unsplash.com/@benjeeeman?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Ben den Engelsen</a> on <a href="https://unsplash.com/photos/YUu9UAcOKZ4?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
 2. Photo by <a href="https://unsplash.com/@olianayda?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Olga Nayda</a> on <a href="https://unsplash.com/photos/fHXpgMd_XhE?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
