@@ -1,4 +1,5 @@
 # MaPed (Matkul Pedia)
+
 ## Mengenai Projek
 ***Matkul Pedia*** merupakan situs yang menyediakan berbagai macam informasi mengenai mata kuliah yang ada dalam Institut Teknologi Bandung. Dalam repositori ini, projek yang kami buat hanya berskala dalam lingkup **STEI-K** saja. 
 
@@ -10,7 +11,6 @@ Mata kuliah yang kami berikan hanya berupa:
 Projek ini dapat dijalani dengan membuka file ``index.html`` pada browser default yang digunakan.
 
 Projek ini dapat juga dijalani dengan mengakses link <a href="https://raflyhangga.github.io/milestone-sparta/">berikut</a>.
-
 
 ## Kontribusi Pembuat
 1. Kristo Anugrah (19622018)
@@ -35,6 +35,7 @@ Projek ini dapat juga dijalani dengan mengakses link <a href="https://raflyhangg
 11. Muhammad Zaidan Sa'dun Robbani (19622263)
 12. Justin Lawrence (19622213)
 13. Qady Zakka Raymaula (19622219) 
+
 
 ## Sources
 1. Photo by <a href="https://unsplash.com/@benjeeeman?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Ben den Engelsen</a> on <a href="https://unsplash.com/photos/YUu9UAcOKZ4?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
