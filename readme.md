@@ -36,7 +36,7 @@ Projek ini dapat juga dijalani dengan mengakses link <a href="https://raflyhangg
    - Research konten mata kuliah IF
 7. Favian Izza Diasputra (19622085)
    - Research konten mata kuliah STI
-   - Research konten mata kuliah umum (Pancasila dan Kewarganegaraan)
+   - Research konten mata kuliah umum (Pancasila dan Kewarganegaraan).
 8. Taufiq Ramadhan Ahmad (19622214)
     - Research konten mata kuliah STI
 9. Melati Anggraini (19622144)
